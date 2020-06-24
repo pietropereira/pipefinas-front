@@ -1,0 +1,54 @@
+<div id="login">
+  <div class="container align-self-center">
+
+    <div class="row justify-content-center text-dark heigth-login">
+      <div class="col-lg-4 margin-top-form">
+        <form [formGroup]="form" (submit)="login()" *ngIf="!newPassord">
+          <h2>Login</h2>
+          <hr>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" class="form-control" id="email" formControlName="email">
+          </div>
+
+          <div class="form-group">
+            <label for="password">Senha</label>
+            <input type="password" class="form-control" id="password" formControlName="password">
+          </div>
+          
+          <div class="row">
+            <div class="col-xl-6 mt-1">
+              <button type="submit" class="btn btn-primary btn-block">Entrar</button>
+            </div>
+            <div class="col-xl-6 mt-1">
+              <button class="btn btn-danger btn-block" (click)="newPassord = true">Esqueci a senha</button>
+            </div>
+          </div>
+        </form>
+
+
+        <form [formGroup]="form" (submit)="forgotPassword()" *ngIf="newPassord">
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" class="form-control" id="email" formControlName="email">
+          </div>
+
+
+          <div class="row">
+            <div class="col-md-6 mt-1">
+              <button type="submit" class="btn btn-primary btn-block">Enviar nova senha</button>
+            </div>
+            <div class="col-md-6 mt-1">
+              <button class="btn btn-success btn-block" (click)="newPassord = false">Login</button>
+            </div>
+          </div>
+          
+           
+        </form>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<app-footer></app-footer>

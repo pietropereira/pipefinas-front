@@ -1,0 +1,54 @@
+<div id="create-user">
+  <div class="container align-self-center">
+
+    <div class="row justify-content-center text-dark height-create-user">
+      <div class="col-md-7 margin-top-form">
+        <form [formGroup]="form" (submit)="submitForm()">
+          <h2>Cadastro</h2>
+          <hr>
+          <div class="row">
+            <div class="form-group col-md-6">
+              <label for="nickName">Nome</label>
+              <input type="text" class="form-control" id="nickName" formControlName="nickName" >
+              <app-form-field-error [form-control]="form.get('nickName')"></app-form-field-error>
+            </div>
+
+            <div class="form-group col-md-6">
+              <label for="email">Email</label>
+              <input type="email" class="form-control" id="email" formControlName="email">
+              <app-form-field-error [form-control]="form.get('email')"></app-form-field-error>
+            </div>
+  
+          </div>
+
+          <div class="row">
+            <div class="form-group col-md-6">
+              <label for="password">Senha</label>
+              <input type="password" class="form-control" id="password" formControlName="password">
+              <app-form-field-error [form-control]="form.get('password')"></app-form-field-error>
+            </div>
+  
+            <div class="form-group col-md-6">
+              <label for="confirmPassword">Confirmação de senha</label>
+              <input type="password" class="form-control" id="confirmPassword" formControlName="confirmPassword">
+              <app-form-field-error [form-control]="form.get('password')"></app-form-field-error>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-6 mt-1">
+              <button type="submit" class="btn btn-primary btn-block" [disabled]="submittingForm">Cadastrar</button>
+            </div>
+            <div class="col-md-6 mt-1">
+              <button class="btn btn-danger btn-block" routerLink="/home" type="button">Cancelar</button>
+            </div>
+          </div>  
+          
+        </form>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<app-footer></app-footer>

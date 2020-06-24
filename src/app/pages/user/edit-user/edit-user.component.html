@@ -1,0 +1,63 @@
+<div class="bg-height">
+  
+  <div class="container align-self-center">
+      
+    <div class="row justify-content-center text-dark">
+      <div class="col-md-6 margin-top-form">
+        <h3 class="text-start">Alterar Usuário</h3>
+        <hr>
+        <form [formGroup]="form" (submit)="submitForm()">
+          <div class="row">
+            <div class="form-group col-md-6">
+              <label for="nickName">Nome</label>
+              <input type="text" class="form-control" id="nickName" formControlName="nickName">
+              <app-form-field-error [form-control]="form.get('nickName')"></app-form-field-error>
+            </div>
+  
+            <div class="form-group col-md-6">
+              <label for="email">Email</label>
+              <input type="email" class="form-control" id="email" formControlName="email">
+              <app-form-field-error [form-control]="form.get('email')"></app-form-field-error>
+            </div>
+          </div>
+
+          <button type="submit" class="btn btn-outline-primary btn-block" [disabled]="submittingForm">Salvar</button>
+        </form>
+
+        <form [formGroup]="form" (submit)="changePassword()">
+          <h3 class="text-start mt-3 mb-4">Alterar Senha</h3>
+          <hr>
+          <div class="row">
+            <div class="form-group col-md-6">
+              <label for="currentPassword">Senha atual</label>
+              <input type="password" class="form-control" id="currentPassword" formControlName="currentPassword">
+              <app-form-field-error [form-control]="form.get('currentPassword')"></app-form-field-error>
+            </div>
+
+            <div class="form-group col-md-6">
+              <label for="newPassword">Nova Senha</label>
+              <input type="password" class="form-control" id="newPassword" formControlName="newPassword">
+              <app-form-field-error [form-control]="form.get('newPassword')"></app-form-field-error>
+            </div>
+
+            <div class="form-group col-md-6">
+              <label for="confirmNewPassword">Confirmação da Senha</label>
+              <input type="password" class="form-control" id="confirmNewPassword" formControlName="confirmNewPassword">
+              <app-form-field-error [form-control]="form.get('confirmNewPassword')"></app-form-field-error>
+            </div>
+          </div>
+
+          <button class="btn btn-outline-success btn-block" [disabled]="submittingForm">Salvar nova senha</button>
+        </form>
+
+        <form [formGroup]="form" (submit)="deleteUser()">
+          <h3 class="text-start mt-3 mb-4">Excluir Conta</h3>
+          <hr>
+          <small>*Você só poderá cadastrar o e-mail dessa conta novamente após 30 dias.</small>
+          <button class="btn btn-danger btn-block mt-2 mb-4" [disabled]="submittingForm">Excluir</button>
+        </form>
+      </div>
+    </div>
+
+  </div>
+</div>

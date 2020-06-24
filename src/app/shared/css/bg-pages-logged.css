@@ -1,0 +1,18 @@
+.bg-height {
+    background: url('/assets/imgs/bg-all2.jpg') no-repeat;
+    height: 930px;
+}
+
+.card, select, thead {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+input {
+    background-color: rgba(0, 0, 0, 0.1);
+    border: 0px;
+    color: black;
+ }
+
+ .date {
+     color: white;
+ }

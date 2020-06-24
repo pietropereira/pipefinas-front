@@ -1,0 +1,49 @@
+#create-user {
+    background: url('/assets/imgs/bgf.jpg') no-repeat;
+ }
+ 
+ .height-create-user {
+    height: 820px;
+ }
+ 
+ .margin-top-form {
+    margin-top: 140px;
+ }
+
+label {
+   font-size: 1em;
+   color: black;
+}
+
+input {
+   background-color: rgba(0, 0, 0, 0.2);
+   border: 0px;
+   color: black;
+}
+
+h2 {
+   color: white;
+}
+
+@media (min-width: 500.00px) and (max-width: 991.98px) {
+   #create-user {
+       background: url('../../../../assets/imgs/bg-small4.jpg') no-repeat ;
+   }
+
+   .margin-top-form {
+       margin-top: 50px;
+   }
+
+   input {
+      background-color: rgba(0, 0, 0, 0.8);
+      border: 0px;
+      color: white;
+   }
+
+   label {
+      font-weight: bold;
+      font-size: 1em;
+      color: white;
+   }
+
+ }

@@ -1,0 +1,7 @@
+<div class="row mb-4">
+  <div *ngIf="showButton" class="col-md-3 text-left">
+    <a [routerLink]="buttonLink" class="btn" [ngClass]="buttonClass">
+      {{buttonText}}
+    </a>
+  </div>
+</div>

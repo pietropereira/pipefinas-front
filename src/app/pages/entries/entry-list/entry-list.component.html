@@ -1,0 +1,63 @@
+<div class="bg-height">
+
+  <div class="container">
+    <app-bread-crumb [items]="[{text: 'Lançamentos'}]"></app-bread-crumb>
+
+    <app-page-header button-text="Novo Lançamento" button-link="new"
+      button-class="btn-success"></app-page-header>
+
+    <div class="mb- pl-0 form-group col-md-4">
+      <label class="text-bold"><strong>Filtrar Lançamentos</strong></label>
+      <select class="form-control" on-change="filterByExpense($event.target.value)">
+        <option value="0">Despesas/Receitas</option>
+        <option value="1">Despesas</option>
+        <option value="2">Receitas</option>
+      </select>
+    </div>
+
+
+    <table class="table table-hover">
+
+      <thead>
+        <tr class="text-light">
+          <th>Lançamentos</th>
+          <th>Categorias</th>
+          <th class="text-right">R$</th>
+          <th class="text-center">Ações</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr *ngFor="let entry of resources | paginate: { itemsPerPage: 5,  currentPage: p }">
+          <td>
+            <strong>{{entry.name}}</strong><br>
+            <small class="text-primary">{{entry.date | date: 'dd/MM/yyyy'}}</small><br>
+            <small *ngIf="entry.description">{{entry.description}}</small><br>
+          </td>
+          <td>
+            <strong>{{entry.category.name}}</strong>
+          </td>
+
+          <td class="text-right">
+            <strong [class.text-danger]="entry.type == 1" [class.text-success]="entry.type == 2">
+              {{entry.amount.toFixed(2).replace('.', ',')}}
+            </strong><br>
+            <small *ngIf="entry.paid" class="text-success">{{'Pago'}}</small>
+            <small *ngIf="!entry.paid" class="text-danger">{{'Pendente'}}</small>
+          </td>
+          <td class="text-center">
+            <a [routerLink]="[entry.uid, 'edit']" class="btn btn-info btn-sm m-1">Editar</a>
+            <button (click)="delete(entry)" class="btn btn-danger btn-sm m-1">Excluir</button>
+          </td>
+        </tr>
+      </tbody>    
+    </table>
+
+    <div class="container p-0">
+      <div class="text-center" >
+        <pagination-controls (pageChange)="p = $event" previousLabel = 'Anterior' nextLabel = "Próximo"></pagination-controls>
+      </div>
+    </div>
+  </div>
+
+</div>

@@ -1,0 +1,78 @@
+#login {
+    background: url('/assets/imgs/bgf.jpg') no-repeat;
+}
+
+.heigth-login {
+    height: 820px;
+}
+
+.margin-top-form {
+    margin-top: 180px;
+}
+
+label {
+    font-size: 1em;
+    color: black;
+ }
+ 
+ 
+ 
+ input {
+    background-color: rgba(0, 0, 0, 0.3);
+    border: 0px;
+    color: black;
+ }
+
+ h2 {
+    color: white;
+ }
+
+ /* Extra small devices (portrait phones, less than 576px) */
+/* @media (max-width: 575.98px) { 
+    #login {
+        background: url('../../../../assets/imgs/bg-small4.jpg') no-repeat;
+    }
+
+    .margin-top-form {
+        margin-top: 80px;
+    }
+ 
+} */
+/* Small devices (landscape phones, 576px and up) */
+/* @media (min-width: 576px) and (max-width: 767.98px) { 
+    #login {
+        background: url('../../../../assets/imgs/bg-small4.jpg') no-repeat ;
+    }
+
+    .margin-top-form {
+        margin-top: 80px;
+    }
+
+ } */
+
+/*  Medium devices (tablets, 768px and up) */
+@media (min-width: 500.00px) and (max-width: 991.98px) {
+    #login {
+        background: url('../../../../assets/imgs/bg-small4.jpg') no-repeat ;
+    }
+
+    .margin-top-form {
+        margin-top: 150px;
+    }
+
+    input {
+        background-color: rgba(0, 0, 0, 0.8);
+        border: 0px;
+        color: white;
+     }
+  
+     label {
+        font-size: 1em;
+        color: white;
+     }
+  
+    
+ 
+  }
+
+ 
