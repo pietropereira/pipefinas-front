@@ -53,7 +53,7 @@
         <form [formGroup]="form" (submit)="deleteUser()">
           <h3 class="text-start mt-3 mb-4">Excluir Conta</h3>
           <hr>
-          <small>*Você só poderá cadastrar o e-mail dessa conta novamente após 30 dias.</small>
+          <small class="text-white">*Você só poderá cadastrar o e-mail dessa conta novamente após 30 dias.</small>
           <button class="btn btn-danger btn-block mt-2 mb-4" [disabled]="submittingForm">Excluir</button>
         </form>
       </div>

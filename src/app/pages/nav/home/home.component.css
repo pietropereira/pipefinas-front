@@ -1,9 +1,23 @@
+
 #home {
     background-color: #e0e0eb;
+}
+
+.teste {
+	height: 820px;
 }
 
 .box {
 	padding: 60px 0;
 	border-bottom: 1px solid #e5e5e5;
 }
+
+@media (min-width: 300px) and (max-width: 404.98px)  {
+
+	.width-home {
+	   width: 374.98px;
+	}
+
+ }
+ 
 

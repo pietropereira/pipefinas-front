@@ -3,3 +3,13 @@
 .bg-praphic {
     background-color: rgba(0, 0, 0, 0.8);
 }
+
+@media (min-width: 300px) and (max-width: 404.98px)  {
+
+    .bg-praphic {
+        background-color: rgba(0, 0, 0, 0.9);
+    }
+
+ }
+
+ 

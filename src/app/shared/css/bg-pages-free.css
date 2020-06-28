@@ -1,0 +1,81 @@
+.bg-create-user-login {
+    /* background: url('/assets/imgs/bgf.jpg') no-repeat; */
+    /* background-image: linear-gradient(to right top, #898c8c, #879a9b, #83a9ac, #7eb7be, #76c5d1); */
+    background-image: linear-gradient(to right top, #000000, #3c353e, #666e83, #82b1c8, #a8f9f9);
+    height: 820px;
+ }
+ 
+ .margin-top-form {
+    margin-top: 140px;
+ }
+
+label {
+   font-size: 1em;
+   color: white;
+}
+
+input {
+   background-color: rgba(0, 0, 0, 0.3);
+   border: 0px;
+   color: white;
+ 
+}
+
+h2 {
+   color: white;
+}
+
+/* @media (min-width: 300.00px) and (max-width: 991.98px) {
+   
+ .height-create-user-login {
+   height: 620px;
+}
+
+   .margin-top-form {
+       margin-top: 30px;
+   }
+
+   input {
+      background-color: rgba(0, 0, 0, 0.8);
+      border: 0px;
+      color: white;
+   }
+
+   label {
+      font-weight: bold;
+      font-size: 1em;
+      color: white;
+   }
+
+ } */
+
+ @media (min-width: 300px) and (max-width: 404.98px)  {
+
+   .bg-create-user-login  {
+      width: 374.98px;
+      height: 730px;
+   }
+
+   .margin-top-form {
+      margin-top: 50px;
+   }
+
+}
+
+@media (min-width: 768px) and (max-width: 1024px)  {
+
+   .bg-create-user-login  {
+     height: 980px;
+   }
+
+}
+
+@media (min-width: 1024px) and (max-width: 1366px)  {
+
+   .bg-create-user-login  {
+     height: 1250px;
+   }
+
+}
+
+

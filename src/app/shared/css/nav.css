@@ -6,3 +6,25 @@
     color: #f0f0f5;
     font-size: 1.2em
 } 
+
+/* 
+@media (min-width: 300.00px) and (max-width: 991.98px) {
+
+    .nav-width {
+        width: 410px;
+    }
+
+ } */
+
+ @media (min-width: 300px) and (max-width: 404.98px)  {
+
+    .bg-height {
+        width: 405.98px;
+    }
+
+    .bg-width-login-create-user {
+        width: 374.98px;
+    }
+
+ }
+

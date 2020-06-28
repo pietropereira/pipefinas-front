@@ -6,7 +6,7 @@
     <app-page-header button-text="Novo Lançamento" button-link="new"
       button-class="btn-success"></app-page-header>
 
-    <div class="mb- pl-0 form-group col-md-4">
+    <div class="mb-2 pl-0 form-group col-md-4">
       <label class="text-bold"><strong>Filtrar Lançamentos</strong></label>
       <select class="form-control" on-change="filterByExpense($event.target.value)">
         <option value="0">Despesas/Receitas</option>
@@ -38,14 +38,14 @@
             <strong>{{entry.category.name}}</strong>
           </td>
 
-          <td class="text-right">
+          <td class="text-right ">
             <strong [class.text-danger]="entry.type == 1" [class.text-success]="entry.type == 2">
               {{entry.amount.toFixed(2).replace('.', ',')}}
             </strong><br>
             <small *ngIf="entry.paid" class="text-success">{{'Pago'}}</small>
             <small *ngIf="!entry.paid" class="text-danger">{{'Pendente'}}</small>
           </td>
-          <td class="text-center">
+          <td class="text-center buttons-height">
             <a [routerLink]="[entry.uid, 'edit']" class="btn btn-info btn-sm m-1">Editar</a>
             <button (click)="delete(entry)" class="btn btn-danger btn-sm m-1">Excluir</button>
           </td>

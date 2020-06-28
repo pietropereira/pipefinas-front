@@ -1,18 +1,41 @@
 .bg-height {
-    background: url('/assets/imgs/bg-all2.jpg') no-repeat;
-    height: 930px;
+    /* background-image: linear-gradient(to right top, #080f0f, #2c3131, #505555, #777c7c, #a1a6a6); */  
+    /* background-image: linear-gradient(to right top, #000000, #191719, #26282e, #2f3b41, #3a4f4f); */
+    /* background-image: linear-gradient(to right top, #000000, #191719, #26282e, #2f3b41, #3a4f4f); */
+    /* background-image: linear-gradient(to right top, #c0c8c8, #b8bfbf, #b0b7b7, #a9aeae, #a1a6a6); */
+    /* background-image: linear-gradient(to right top, #718181, #637474, #556767, #475b5b, #3a4f4f); */
+    background-image: linear-gradient(to right top, #000000, #2a272b, #484c56, #617681, #7ea3a3);
+    height: 900px;
 }
 
 .card, select, thead {
     background-color: rgba(0, 0, 0, 0.2);
+    color: white;
 }
 
 input {
-    background-color: rgba(0, 0, 0, 0.1);
+    background-color: rgba(0, 0, 0, 0.3);
     border: 0px;
-    color: black;
+    color: white;
  }
 
- .date {
+ .date, small, h3, label {
      color: white;
  }
+
+ @media (min-width: 300px) and (max-width: 404.98px)  {
+
+    .bg-height {
+        width: 405.98px;
+    }
+
+ }
+
+ @media (min-width: 1024px) and (max-height: 1366px)  {
+     
+    .bg-height {
+        height:  1366px;
+    }
+
+ }
+ 
