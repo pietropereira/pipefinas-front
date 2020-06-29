@@ -1,5 +1,11 @@
 @import '../../../shared/css/bg-pages-logged.css';
 
+
+.bg-height {
+    background-image: linear-gradient(to right top, #000000, #2a272b, #484c56, #617681, #7ea3a3);
+    height: 900px;
+}
+
 .bg-praphic {
     background-color: rgba(0, 0, 0, 0.8);
 }

@@ -5,7 +5,7 @@
     /* background-image: linear-gradient(to right top, #c0c8c8, #b8bfbf, #b0b7b7, #a9aeae, #a1a6a6); */
     /* background-image: linear-gradient(to right top, #718181, #637474, #556767, #475b5b, #3a4f4f); */
     background-image: linear-gradient(to right top, #000000, #2a272b, #484c56, #617681, #7ea3a3);
-    height: 900px;
+    height: 1080px;
 }
 
 .card, select, thead {
@@ -23,10 +23,11 @@ input {
      color: white;
  }
 
- @media (min-width: 300px) and (max-width: 404.98px)  {
+ @media (min-width: 300px) and (max-width: 402.98px)  {
 
     .bg-height {
-        width: 405.98px;
+        width: 391.98px;
+        overflow: hidden;
     }
 
  }
