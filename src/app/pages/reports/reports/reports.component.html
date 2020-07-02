@@ -81,15 +81,21 @@
 
     <hr class="col-md-6 d-none d-md-block">
 
-    <div class="row mt-4 mb-0 bg-praphic">  
-      <div class="col-md-6 mt-2" >
-        <p-chart type="bar" [data]="revenueChartData" [options]="chartOptions"></p-chart>
-      </div>
-  
-      <div class="col-md-6 mt-2">
-        <p-chart type="bar"[data]="expenseChartData" [options]="chartOptions"></p-chart>
+
+    <div class="margin-graphic">
+      
+      <div class="row mt-4 mb-0 bg-praphic">  
+        <div class="col-md-6 mt-2" >
+          <p-chart type="bar" [data]="revenueChartData" [options]="chartOptions"></p-chart>
+        </div>
+    
+        <div class="col-md-6 mt-2">
+          <p-chart type="bar"[data]="expenseChartData" [options]="chartOptions"></p-chart>
+        </div>
       </div>
     </div>
-  </div>
+
+    </div>
+    
   
 </div>
