@@ -21,6 +21,11 @@ export class CreateUserComponent extends BaseFormUSer<UserModel> {
     super(injector);
   }
 
+  ngOnInit() {
+    super.ngOnInit();
+    this.isLogged();
+  }
+
   protected buildResourceForm(): void {
     this.form = this.formBuilder.group({
       nickName: [null, [Validators.required, Validators.minLength(3)]],
@@ -44,6 +49,12 @@ export class CreateUserComponent extends BaseFormUSer<UserModel> {
     }
     else {
       toastr.error('Erro ao se cadastrar, tente novamente...');
+    }
+  }
+
+  isLogged() {
+    if(this.userSrv.isStaticLogged) {
+      return this.router.navigateByUrl('/reports');
     }
   }
 

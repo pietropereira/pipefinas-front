@@ -17,6 +17,11 @@ li, li a {
     font-size: 0.9em;
 }
 
+
+.padding-top-ul {
+    padding-top: 10px;
+}
+
 @media (min-width: 300px) and (max-width: 404.98px)  {
 
     .width-footer {
